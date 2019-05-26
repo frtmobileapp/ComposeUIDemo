@@ -17,12 +17,12 @@ import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
 
-    public static final String TAG=UserAdapter.class.getSimpleName();
+    public static final String TAG = UserAdapter.class.getSimpleName();
 
     private List<UserInfo> mUserInfos;
 
-    public UserAdapter(List<UserInfo> userInfos){
-        mUserInfos=userInfos;
+    public UserAdapter(List<UserInfo> userInfos) {
+        mUserInfos = userInfos;
     }
 
     @NonNull
@@ -30,21 +30,21 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
     public UserViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         LayoutInflater layoutInflater = LayoutInflater.from(viewGroup.getContext());
         View inflate = layoutInflater.inflate(R.layout.item_user, viewGroup, false);
-        Log.d(TAG,"onCreateViewHolder");
+        Log.d(TAG, "onCreateViewHolder");
         return new UserViewHolder(inflate);
     }
 
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder userViewHolder, int position) {
-        Log.d(TAG,"onBindViewHolder");
+        Log.d(TAG, "onBindViewHolder");
         final UserInfo userInfo = mUserInfos.get(position);
         Glide.with(userViewHolder.mIvAvatar).load(userInfo.avatarUrl).into(userViewHolder.mIvAvatar);
         userViewHolder.mTvUserName.setText(userInfo.userName);
-        userViewHolder.mTvEmail.setText(userInfo.userName);
+        userViewHolder.mTvEmail.setText(userInfo.content);
         userViewHolder.mIvAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(v.getContext(),v.getContext().getString(R.string.hello),Toast.LENGTH_LONG).show();
+                Toast.makeText(v.getContext(), v.getContext().getString(R.string.hello), Toast.LENGTH_LONG).show();
             }
         });
     }
