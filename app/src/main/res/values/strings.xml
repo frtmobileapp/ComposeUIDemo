@@ -2,4 +2,8 @@
     <string name="app_name">RecentConversationDemo</string>
     <string name="z">dsdsdsdsdsdsdsdsdsa</string>
     <string name="hello">Hello</string>
+    <string name="avatar">avatar</string>
+    <string name="username">username</string>
+    <string name="app">add</string>
+
 </resources>
