@@ -2,4 +2,11 @@
     <string name="app_name">RecentConversationDemo</string>
     <string name="z">dsdsdsdsdsdsdsdsdsa</string>
     <string name="hello">Hello</string>
+    <string name="item_add">点击添加</string>
+    <string name="item_delete">点击删除</string>
+    <string name="add">添加</string>
+    <string name="delete">删除</string>
+    <string name="deputy">DeputyActivity</string>
+    <string name="et_input">请输入...</string>
+    <string name="txt_modify">修改</string>
 </resources>
