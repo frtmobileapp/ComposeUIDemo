@@ -1,4 +1,4 @@
-package com.nd.frt.recentconversation.adapter;
+ppackage com.nd.frt.recentconversation.adapter;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -45,6 +45,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
             @Override
             public void onClick(View v) {
                 Toast.makeText(v.getContext(), v.getContext().getString(R.string.hello), Toast.LENGTH_LONG).show();
+
             }
         });
     }
