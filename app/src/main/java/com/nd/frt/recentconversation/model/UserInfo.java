@@ -1,6 +1,8 @@
 package com.nd.frt.recentconversation.model;
 
-public class UserInfo {
+import java.io.Serializable;
+
+public class UserInfo implements Serializable {
 
     public String avatarUrl;
     public String userName;
