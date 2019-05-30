@@ -71,5 +71,6 @@ public class UserAdapter extends RecyclerView.Adapter<UserViewHolder> {
 
     public void edit(int index, UserInfo userInfo) {
         mUserInfos.set(index, userInfo);
+        notifyDataSetChanged();
     }
 }
