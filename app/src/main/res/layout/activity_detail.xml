@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".activity.DetailActivity">
+
+    <ImageView
+        android:contentDescription="@string/avatar"
+        android:id="@+id/ivAvatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:hint="@string/username"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:text="@android:string/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
