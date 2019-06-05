@@ -55,7 +55,6 @@ public class DetailActivity extends AppCompatActivity {
               intentResult.putExtra(PARAM_USER_INDEX,mUserIndex);
               setResult(RESULT_OK,intentResult);
               finish();
-
           }
       });
     }

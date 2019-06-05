@@ -18,18 +18,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         UserInfoService userInfoService = new UserInfoService();
         List<UserInfo> userInfos = userInfoService.getUserInfos(this);
-        UserAdapter userAdapter = new UserAdapter(userInfos);
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.rvRecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+        RecyclerView rvUsers = (RecyclerView) findViewById(R.id.rvUsers);
+        rvUsers.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         UserAdapter mUserAdapter = new UserAdapter(userInfos);
-        recyclerView.setAdapter(userAdapter);
+        rvUsers.setAdapter(mUserAdapter);
     }
 
     @Override
