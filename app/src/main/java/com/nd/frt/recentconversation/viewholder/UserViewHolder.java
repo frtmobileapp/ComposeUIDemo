@@ -10,14 +10,16 @@ import com.nd.frt.recentconversation.R;
 
 public class UserViewHolder extends RecyclerView.ViewHolder {
 
-    public final ImageView mIvAvatar;
-    public final TextView mTvUserName;
-    public final TextView mTvEmail;
+    public final ImageView mIvatar;
+    public final TextView mtvUserName;
+    public final TextView mtvEmail;
 
     public UserViewHolder(@NonNull View itemView) {
         super(itemView);
-        mIvAvatar = itemView.findViewById(R.id.ivAvatar);
-        mTvUserName = itemView.findViewById(R.id.tvUserName);
-        mTvEmail = itemView.findViewById(R.id.tvEmail);
+        mIvatar = itemView.findViewById(R.id.ivAvatar);
+        mtvUserName = itemView.findViewById(R.id.tvUserName);
+        mtvEmail = itemView.findViewById(R.id.tvEmail);
+
     }
+
 }
