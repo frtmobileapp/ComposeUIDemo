@@ -8,12 +8,10 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import com.nd.frt.recentconversation.activity.DetailActivity;
 import com.nd.frt.recentconversation.adapter.UsersAdapter;
 import com.nd.frt.recentconversation.model.UserInfo;
 import com.nd.frt.recentconversation.service.UserInfoService;
-
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         UserInfoService userInfoService = new UserInfoService();
         List<UserInfo> userInfos = userInfoService.getUserInfos(this);
-        RecyclerView recy_list = findViewById(R.id.recy_list);
-        recy_list.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
+        RecyclerView recyList = findViewById(R.id.recyList);
+        recyList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
         mUserAdapter = new UsersAdapter(userInfos);
-        recy_list.setAdapter(mUserAdapter);
+        recyList.setAdapter(mUserAdapter);
     }
 
     @Override
