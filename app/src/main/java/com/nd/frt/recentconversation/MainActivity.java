@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == RESULT_OK) {
+        if (resultCode == RESULT_OK) {
             if (data != null) {
                 UserInfo userInfo = (UserInfo) data.getSerializableExtra(DetailActivity.PARAM_USER_INFO);
                 int index = data.getIntExtra(DetailActivity.PARAM_USER_INDEX, 0);
